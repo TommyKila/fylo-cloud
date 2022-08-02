@@ -222,6 +222,7 @@ body {
         position: absolute;
         margin: 0 0 -16em 0;
         width: 12em;
+        border-radius: 0.75em;
     }
 
     .space-left:after {
