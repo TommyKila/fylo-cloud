@@ -48,7 +48,7 @@ body {
 .icon {
     border-radius: 0.5em;
     background-color: hsl(229, 57%, 11%);
-    transition: 300ms;
+    transition: 250ms;
 }
 
 .icon-document {
@@ -147,7 +147,6 @@ body {
     width: 100%;
     background-color: hsl(229, 57%, 11%);
     border-radius: 1em;
-    cursor: pointer;
 }
 
 .storage-bar {
@@ -158,6 +157,17 @@ body {
     border: 0.3em solid hsl(229, 57%, 11%);
     display: flex;
     justify-content: flex-end;
+    animation: fillinEffect 3s ease-in reverse;
+}
+
+@keyframes fillinEffect {
+    0% {
+        width: 81.5%;
+    }
+
+    100% {
+        width: 5%;
+    }
 }
 
 .circle {
@@ -168,12 +178,16 @@ body {
 }
 
 .icon:hover {
-    transform: scale(1.1);
+    background-color: hsl(243, 100%, 93%);
 }
 
 @media screen and (max-width: 950px) {
     body {
-        background-position: bottom;
+        background-position: unset;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./images/bg-mobile.png);
+
     }
 
     .container {
@@ -222,7 +236,6 @@ body {
         position: absolute;
         margin: 0 0 -16em 0;
         width: 12em;
-        border-radius: 0.75em;
     }
 
     .space-left:after {
@@ -231,11 +244,6 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-    body {
-        background-image: url(./images/bg-mobile.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
     .container {
         width: 90%;
