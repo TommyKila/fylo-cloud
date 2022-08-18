@@ -10,8 +10,8 @@
 body {
     background-image: url(./images/bg-desktop.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0px 350px;
+    background-size: 100% 50vmin;
+    background-position: bottom;
     background-color: hsl(229, 57%, 11%);
     display: flex;
     justify-content: center;
@@ -187,7 +187,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(./images/bg-mobile.png);
-
     }
 
     .container {
