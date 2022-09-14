@@ -158,7 +158,7 @@ body {
     border: 0.3em solid hsl(229, 57%, 11%);
     display: flex;
     justify-content: flex-end;
-    animation: fillinEffect 1.25s ease-in reverse;
+    animation: fillinEffect 4s ease-in reverse;
 }
 
 @keyframes fillinEffect {
