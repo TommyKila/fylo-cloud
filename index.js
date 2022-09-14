@@ -3,7 +3,7 @@ console.log(items);
 
 const updateCount = (el) => {
     const value = parseInt(el.dataset.value);
-    const increment = Math.ceil(value / 180);
+    const increment = Math.ceil(value / 100);
     let initialValue = 0;
 
     const increaseCount = setInterval(() => {
