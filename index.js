@@ -7,7 +7,7 @@ const updateCount = (el) => {
     let initialValue = 0;
 
     const increaseCount = setInterval(() => {
-        initialValue ++;
+        initialValue += increment;
 
         if (initialValue > value) {
             el.textContent = value;
